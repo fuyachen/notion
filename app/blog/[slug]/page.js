@@ -1,17 +1,20 @@
 import { rootNotionPageId } from "@/blog.config";
-import notion from "@/lib/notion/notionClient";
-import getPageProps from "@/lib/notion/getPageProps";
-import NotionPage from "@/components/NotionPage.jsx";
-import BlogHeader from "@/components/BlogHeader.jsx";
+import NotionPage from "@/components/Blog/NotionRenderer.jsx";
+import BlogHeader from "@/components/Blog/PostHeader.jsx";
+import { getRecordMap, getPageProps, getAllPageIds } from "@/lib/notion";
 
-const Blog = async () => {
-  const recordMap = await notion.getPage(rootNotionPageId);
-  const pageProps = await getPageProps(rootNotionPageId, recordMap);
+const Blog = async ({ params }) => {
+  const pageId = params.slug;
+  const PageRecordMap = await getRecordMap(pageId);
+  const pageProps = await getPageProps(pageId, PageRecordMap);
 
   return (
     <article className="flex justify-center items-center flex-col max-w-[720px] m-auto">
       <BlogHeader pageProps={pageProps} />
-      <NotionPage recordMap={recordMap} schema={{ darkMode: false }} />
+      <NotionPage
+        recordMap={PageRecordMap}
+        schema={{ darkMode: false, collection: false }}
+      />
     </article>
   );
 };

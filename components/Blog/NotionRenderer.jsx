@@ -8,6 +8,8 @@ import "@/styles/notion.css";
 import "@/styles/prism.css";
 // used for rendering equations (optional)
 import "katex/dist/katex.min.css";
+import Image from "next/image";
+import Link from "next/link";
 
 // dynamic imports
 const Code = dynamic(() =>
@@ -44,6 +46,8 @@ const NotionPage = ({ recordMap, schema = {} }) => {
         Collection: schema.collection ? Collection : null,
         Equation,
         Modal,
+        nextImage: Image,
+        nextLink: Link,
       }}
     />
   );
