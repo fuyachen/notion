@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 38, 100%, 98%;
-    --foreground: 60, 5%, 4%;
+    --background: hsl(40, 100%, 99%);
+    --foreground: hsl(60, 5%, 4%);
 
     --card: 0 0% 100%;
     --card-foreground: 60, 5%, 4%;
@@ -16,8 +16,8 @@
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 30, 75%, 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-foreground: hsl(0, 0%, 64%);
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -33,11 +33,21 @@
     --ring: 60, 5%, 4%;
 
     --radius: 0.5rem;
+
+    --notion-red_background: rgb(251, 228, 228);
+    --notion-pink_background: rgb(244, 223, 235);
+    --notion-blue_background: rgb(221, 235, 241);
+    --notion-purple_background: rgb(234, 228, 242);
+    --notion-green_background: rgb(221, 237, 234);
+    --notion-yellow_background: rgb(251, 243, 219);
+    --notion-orange_background: rgb(250, 235, 221);
+    --notion-brown_background: rgb(233, 229, 227);
+    --notion-gray_background: rgb(235, 236, 237);
   }
 
   .dark {
-    --background: 60, 5%, 4%;
-    --foreground: 30, 75%, 95%;
+    --background: hsl(0, 0%, 14%);
+    --foreground: hsl(30, 75%, 95%);
 
     --card: 60, 5%, 4%;
     --card-foreground: 30, 75%, 95%;
@@ -48,8 +58,8 @@
     --primary: 30, 75%, 95%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 30, 75%, 95%;
+    --secondary: hsl(216, 5%, 21%);
+    --secondary-foreground: hsl(30, 75%, 95%);
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -63,6 +73,16 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --notion-red_background: rgb(252, 88, 88, 0.4);
+    --notion-pink_background: rgb(248, 110, 144, 0.4);
+    --notion-blue_background: rgb(78, 139, 239, 0.4);
+    --notion-purple_background: rgb(134, 100, 246, 0.4);
+    --notion-green_background: rgba(97, 240, 230, 0.4);
+    --notion-yellow_background: rgb(246, 210, 105, 0.4);
+    --notion-orange_background: rgb(244, 169, 100, 0.4);
+    --notion-brown_background: rgb(162, 82, 43, 0.4);
+    --notion-gray_background: rgb(142, 142, 142, 0.4);
   }
 }
 

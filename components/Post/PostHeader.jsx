@@ -7,7 +7,7 @@ const BlogHeader = ({ pageProps }) => {
     <header className="w-full">
       <div
         id="category-container"
-        className="group w-full h-6 flex justify-start items-center font-normal text-slate-700 mt-8 text-lg cursor-pointer "
+        className="group w-full h-6 flex justify-start items-center font-normal text-slate-700 text-lg cursor-pointer"
       >
         <div
           id="back_to_category"
@@ -49,7 +49,7 @@ const BlogHeader = ({ pageProps }) => {
       </h2>
       <figure
         id="blog_cover"
-        className="relative w-full aspect-video rounded-3xl overflow-hidden mb-8"
+        className="relative w-full aspect-video rounded-2xl overflow-hidden mb-8"
       >
         <Image src={cover} alt="medium" fill />
       </figure>

@@ -8,7 +8,7 @@ const Logo = () => {
       <div className="w-12 h-12 relative">
         <Image src={logo} alt="Achen Fu" fill />
       </div>
-      <p className="text-2xl font-mono font-semibold">ACHEN</p>
+      <p className="hidden sm:block text-2xl font-mono font-semibold">ACHEN</p>
     </Link>
   );
 };

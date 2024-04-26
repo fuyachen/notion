@@ -1,6 +1,6 @@
 import { rootNotionPageId } from "@/blog.config";
-import NotionPage from "@/components/Blog/NotionRenderer.jsx";
-import BlogHeader from "@/components/Blog/PostHeader.jsx";
+import NotionPage from "@/components/Post/NotionRenderer.jsx";
+import BlogHeader from "@/components/Post/PostHeader.jsx";
 import { getRecordMap, getPageProps, getAllPageIds } from "@/lib/notion";
 
 const Blog = async ({ params }) => {
